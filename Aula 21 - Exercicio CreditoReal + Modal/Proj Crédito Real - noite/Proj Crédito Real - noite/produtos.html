@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crédito Real noite</title>
+        <!-- CSS do bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS pessoal -->
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    </head>
+    <body>
+        <div id="modal_pai">
+            <div id="modal">
+                <a href="#" onclick="fecharModal()" id="fechar"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                <form action="">
+                    <div class="input-group mb-2 mr-sm-2">
+                        <label class="sr-only" for="inlineFormInputName2">Nome</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <label class="sr-only" for="inlineFormInputName2">Telefone</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="telefone" placeholder="Telefone">
+                    </div>
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">E-mail</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="text" class="form-control mr-sm-2" id="email" placeholder="E-mail">
+                    </div>
+
+
+                    <textarea id="msg" class="form-control mr-sm-2" placeholder="Mensagem"></textarea>
+
+
+                    <button type="button" onclick="validar()" class="btn  mb-2 mt-5">Enviar</button>
+                    <button type="reset" onclick="limpar()" class="btn  mb-2 mt-5">Limpar</button>
+                    <label id="resposta"></label>
+
+                </form> 
+            </div>
+        </div>
+        <main id="principal">
+            <header id="topo">
+                <figure id="logo"></figure>
+                <nav id="menu_superior">
+                    <ul>
+                        <a href="index.html"><li>HOME</li></a>
+                        <a href="historia.html"><li>HISTÓRIA</li></a>
+                        <a href="produtos.html"><li>PRODUTOS</li></a>
+                        <a href="#" onclick="abrirModal()"><li>CONTATO</li></a>
+                    </ul>
+                </nav>
+            </header>
+            <div id="corpo">
+                <section id="contato">
+                    <figure>
+                        <img src="img/logo2.png">
+                    </figure>
+                </section>
+                <audio controls>
+                    <source src="audios/audio1.mp3">
+                </audio>
+            </div>
+            <footer id="rodape"></footer>
+        </main>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/funcoes.js"></script>
+    </body>
+</html>

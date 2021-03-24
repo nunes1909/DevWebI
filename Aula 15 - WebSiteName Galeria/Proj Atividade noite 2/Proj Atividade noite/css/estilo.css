@@ -1,0 +1,298 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+h2{
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+}
+
+#topo{
+    width: 100%;
+    background-color: #222;
+    float: left;
+    position: fixed;
+    z-index: 2;
+}
+#topo a{
+    color: white;
+}
+#topo h2{
+    float: left;
+    color: #888;
+    font-size: 1.1em;
+    height: 55px;
+    line-height: 55px;
+    margin-left: 10px;
+    
+}
+#btn_menu{
+    float: right;
+    width: 50px;
+    background-color: rgba(0,0,0,0.7);
+    border: solid 0.5px #444;
+    padding: 7px;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+#menu{
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    background-color: #222;
+    color: white;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+#menu:target{
+    height: 200px;
+}
+
+#menu ul{
+    width: 100;
+    height: 100%;
+    margin-top: 55px;
+}
+
+#menu ul li{
+    width: 100%;
+    padding: 8px 10px;
+    color: white;
+    font-size: 0.8em;
+}
+
+#menu ul li:hover{
+    background-color: black;
+    color: #d1d1d1;
+}
+
+#pai_banner{
+    width: 100%;
+    padding: 0 10px;
+}
+
+#banner{
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    text-align: center;
+    padding: 30px;
+    color: bisque;
+    text-shadow: 0.5px 0px 1px #000;
+    float: left;
+}
+#banner h1{
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+#banner h2{
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+#corpo{
+    width: 100%;
+    float: left;
+    padding: 5%;
+}
+
+#corpo h2,p{
+    padding: 5px 3%;
+    font-size: 1.3em;
+}
+
+#corpo p{
+    font-size: 0.8em;
+}
+
+#texto_galeria h2{
+    font-size: 1.5em;
+}
+#imgs{
+    width: 100%;
+}
+#imgs figure{
+    width: 100%;
+    border: solid 0.5px #d1d1d1;
+    padding: 2%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+#imgs figure img{
+    width: 100%;
+}
+
+#imgs figure figcaption{
+    font-size: 0.8em; 
+    padding: 2%;
+    line-height: 20px;
+}
+
+#texto_rodape{
+    font-size: 0.8em;
+}
+#texto_rodape h2{
+    margin-left: 10px;    
+}
+#rodape{
+    width: 100%;
+    float: left;
+    background-color: #999;
+    padding: 5%;
+}
+
+#rodape form input{
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    padding-left: 3%;
+    border-radius: 5px;
+}
+
+#additional{
+    font-size: 01em;
+}
+#botoes{
+    width: 100%; 
+}
+
+#botoes button{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    border: solid 0.5px silver;
+    border-radius: 5px;
+    color: #666;
+    font-size: 1.1em;
+    margin-top: 10px;
+    height: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#botoes button:hover{
+    color: #333;
+}
+#carrocel,{
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.carousel-indicators{
+    z-index: 1 !important;
+}
+
+
+@media screen and (min-width:480px){
+    #banner{
+        font-size: 1.4em;
+    }
+    #corpo,#rodape{
+        font-size: 1.2em;
+    }
+   
+}
+@media screen and (min-width:768px){
+    #textos{
+        display: flex;
+    }
+    #pai_banner{
+        height: 200px;
+    }
+    #banner{
+        height: 100%;
+        font-size: 1.5em;
+    }
+    #banner h1{
+        margin-top: 30px;
+    }
+    #corpo,#rodape{
+        font-size: 1.3em;
+    }
+    .texto_coluna{
+        padding: 2%;
+        border: solid 0.5px #d1d1d1;
+        margin-left: 5px;
+        border-radius: 7px;
+    }
+}
+@media screen and (min-width:1024px){
+    #banner{
+        font-size: 1.9em;
+    }
+    
+    #imgs{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+     
+    #imgs figure figcaption{
+        font-size: 0.7em;
+    }
+    #imgs figure {
+        margin-left: 5px;
+    }
+    .organiza_input{
+        display: flex;
+        justify-content: space-between;
+    }
+    .organiza_input input, .organiza_input button{
+        width: 49.5% !important;
+    }
+    
+    #btn_menu{
+        display: none;
+    }
+    
+    #menu{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #menu ul{
+        width: 70%;
+        height: 55px;
+        display: flex;
+        position: fixed;
+        z-index: 3;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+    #menu ul li{
+        font-size: 1.2em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

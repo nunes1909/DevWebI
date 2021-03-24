@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Responsivo</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <h1>WebSiteName</h1>
+        <button id="btn_cabecalho"><a href="#menu"> <i class="fa fa-bars fa-lg"></i> </a></button>
+        <nav id="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="">Quem Somos</a></li>
+                <li><a href="">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="corpo">
+        <section id="conteudo1">
+            <figure id="imagem1">
+                <h1>My first Responsive Page</h1>
+                <p>
+                    Resize this responsive page to see the effect!
+                </p>
+            </figure>
+
+            <div id="conteudo1_texto">
+                <div>
+                    <h3 class="colunas">Column 1</h3>
+                    <p class="paragrafos">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <p class="paragrafos">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                    </p>
+                    <h3 class="colunas">Column 2</h3>
+                    <p class="paragrafos">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <p class="paragrafos">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                    </p>
+                    <h3 class="colunas">Column 3</h3>
+                    <p class="paragrafos">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+                    </p>
+                    <p class="paragrafos">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="conteudo2">
+            <div id="conteudo2_texto">
+                <div>
+                    <h3 class="colunas">Image Gallery</h3>
+                    <p class="paragrafos">
+                        The .thumbnail class can be used to display an image gallery.
+                    </p>
+                    <p class="paragrafos">
+                        The .caption class adds proper padding and a dark grey color to text inside thumbnails.
+                    </p>
+                    <p class="paragrafos">
+                        Click on the images to enlarge them.
+                    </p>
+                </div>
+            </div>
+            <div class="imgtxt" id="imgtxt1">
+                <img src="img/img2.jpg" width="100%">
+                <p>
+                    Lorem ipsum donec id elit non mi porta gravida at eget metus.
+                </p>
+            </div>
+            <div class="imgtxt">
+                <img src="img/img3.jpg" width="100%">
+                <p>
+                    Lorem ipsum donec id elit non mi porta gravida at eget metus.
+                </p>
+            </div>
+            <div class="imgtxt">
+                <img src="img/img4.jpg" width="100%">
+                <p>
+                    Lorem ipsum donec id elit non mi porta gravida at eget metus.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <div id="conteudo3">
+            <div id="conteudo3_texto">
+                <h3 class="colunas">Input Groups</h3>
+                <p class="paragrafos">The .input-group class is a container to enhance an input by adding an icon, text
+                    or a button in front or behind it as a "help text".
+                </p>
+                <p class="paragrafos">
+                    The .input-group-addon class attaches an icon or
+                    help text next to the input field.
+                </p>
+            </div>
+            <div id="conteudo_formulario">
+                <form action="" method="post"><br>
+                    <p class="btn_paragrafos">
+                        <input type="email" name="n_nome" placeholder="Email">
+                        <input type="password" name="n_senha" placeholder="Password">
+                    </p><br>
+                    <p class="btn_paragrafos">
+                        <input type="text" name="n_texto" placeholder="Additional info">
+                    </p><br>
+                    <p id="txtpr" class="btn_paragrafos">It can also be used on the right side of the input:</p>
+                    <p class="btn_paragrafos">
+                        <input type="email" name="n_nome" placeholder="Email">
+                        <input type="password" name="n_senha" placeholder="Password">
+                    </p><br>
+                    <p class="btn_paragrafos">
+                        <input id="btn_es" class="btn_es" type="submit" name="n_btn" placeholder="Enviar"><br>
+                        <input id="btn_es" class="btn_es" type="reset" name="n_btn" placeholder="Enviar">
+                    </p><br>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

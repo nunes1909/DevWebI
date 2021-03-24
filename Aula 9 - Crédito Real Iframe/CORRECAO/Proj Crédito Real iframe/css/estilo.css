@@ -1,0 +1,236 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+}
+
+#principal{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#topo{
+    background-image: url(../img/topo.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#logo{
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    z-index: 2;
+}
+#menu_superior{
+    width: 50%;
+    height: 20%;
+    background-color: #eb664a;
+    border-radius: 20vh 0 0 20vh;
+    box-shadow: 1px 1px 10px #000;
+    position: relative;
+}
+
+#menu_superior ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu_superior ul a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+    transition: 0.3s;
+}
+
+#menu_superior ul a:hover{
+    text-shadow: 1px 1px 10px #fff;
+}
+
+
+#corpo{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+#contato{
+    width: 30%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+#contato form{
+    width: 70%;
+    height: 60%;
+    margin-left: 7%;
+    color: white;
+    font-size: 2.3vh;
+    text-shadow: 1px 1px 3px #000;
+    font-weight: bold;
+}
+
+.contato{
+    width: 60%;
+    font-size: 2.7vh;
+    border-radius: 10px;
+    border: none;
+}
+#legenda_contato{
+    text-align: center;
+    padding-bottom: 4%;
+    font-size: 3vh;
+    
+}
+
+#contato form p{
+    padding: 5%;
+}
+#contato form fieldset{
+    border: none;
+}
+
+textarea{
+    width: 90%;
+    font-size: 3vh;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+.btn{
+    width: 45%;
+    font-size: 2.7vh;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #eb664a;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #fff;
+    background-color: rgba(255,255,255,0.3);
+}
+
+#contato{
+    background-color: #eb664a;
+    border-top-right-radius: 100%;
+    box-shadow: 1px 1px 10px #000;
+}
+
+#conteudo_texto{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#conteudo_texto h1{
+    font-size: 5.5vh;
+    color: chocolate;
+    text-shadow: 1px 1px 3px #000;
+}
+#conteudo_texto p{
+    text-align: justify;
+    margin: 0 5%;
+    text-indent: 7%;
+    color: chocolate;
+    font-size: 3.2vh;
+}
+#fachada{
+    width: 35%;
+    height: 100%;
+}
+#img_fachada{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+#img_fachada img{
+    width: 95%;
+    padding: 5% 0;
+}
+#img_fachada figcaption{
+    font-style: italic;
+    color: chocolate;
+}
+
+#rodape{
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, #eb664a 65%, #fff 95%);
+    background-color:#eb664a; 
+    position: inherit;
+}
+
+audio,video{
+    margin: auto;
+}
+table{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px chocolate;
+}
+#topo_tabela{
+    height: 50px;
+    font-size: 5vh;
+    font-weight: bold;
+}
+#lado_tabela{
+    width: 20px;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+iframe{
+    width: 70%;
+    border: none;
+}
+.cont{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+#cont_historia video{
+    margin: auto;
+    width: 80%;
+}
+#cont_home{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

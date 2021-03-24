@@ -1,0 +1,292 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border: none;
+    box-sizing: border-box;
+}
+
+#cabecalho{
+    width: 100%;
+    background-color: black;
+    float: left;
+    color: gray;
+}
+
+ul{
+    list-style: none;
+    display: none;
+}
+
+#cabecalho h1{
+    font-size: 0.9em;
+    float: left;
+    margin: 13px 0 0 6px;
+}
+
+#cabecalho button{
+    float: right;
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px 5px 0;
+    background-color: black;
+}
+
+#cabecalho a{
+    color: gray;
+}
+
+#conteudo1, #conteudo2, #conteudo3{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+#imagem1{
+    background-image: url(../img/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    color: sandybrown;
+    text-shadow: 1px 1px 3px #000;
+    text-align: center;
+    height: 130px;
+}
+
+#imagem1 h1{
+    font-size: 1.1em;
+    margin-top: 30px;
+}
+
+#imagem1 p{
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.colunas, .paragrafos{
+    margin: 5px 5px 0 5px;
+}
+
+#conteudo1_texto, #conteudo2_texto{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+
+.imgtxt{
+    padding: 5px;
+    margin-top: 15px;
+    border: solid 1px #000;
+    
+}
+
+.imgtxt p{
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+#rodape{
+    width: 100%;
+    float: left;
+    background-color: gray;
+}
+
+.btn_paragrafos{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.btn_paragrafos::placeholder{
+    color: gray;
+}
+
+#conteudo_formulario form input{
+    font-size: 1.1em;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 5px;
+    border-radius: 1vh;
+}
+
+#btn_es{
+    width: 223px;
+    color: rgb(99, 99, 99);
+    font-weight: bold;
+}
+
+@media screen and (min-width:480px){
+    #cabecalho h1{
+        font-size: 1.4em;
+        padding: 10px;
+        margin-top: 22px;
+    }
+
+    #cabecalho a{
+        color: black;
+    }
+
+    #cabecalho button{
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin: 20px 20px 20px 0;
+        background-color: gray;
+        border-radius: 1vh;
+    }
+
+    #imagem1{
+        height: 180px;
+        text-shadow: 0px 0px 3px #000;
+    }
+
+    #imagem1 h1{
+        font-size: 1.4em;
+        margin-top: 35px;
+    }
+    
+    #imagem1 p{
+        font-size: 1.3em;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .colunas{
+        font-size: 1.8em;
+    }
+
+    .paragrafos{
+        font-size: 1.5em;
+    }
+
+    .imgtxt p{
+        margin: 5px;
+        font-size: 1.7em;
+    }
+
+    #conteudo_formulario form input{
+        font-size: 1.9em;
+        height: 45px;
+        margin-top: 5px;
+        padding-left: 5px;
+        border-radius: 1vh;
+    }
+    
+    #btn_es{
+        width: 368px;
+        color: rgb(99, 99, 99);
+        font-weight: bold;
+    }
+
+    #txtpr{
+        font-size: 1.9em;
+    }
+}
+}
+
+@media screen and (min-width:780px){
+    #cabecalho h1{
+        font-size: 1.8em;
+        padding: 10px;
+        margin-top: 22px;
+    }
+
+    #cabecalho a{
+        color: black;
+    }
+
+    #cabecalho button{
+        float: right;
+        width: 50px;
+        height: 50px;
+        margin: 20px 20px 20px 0;
+        background-color: gray;
+        border-radius: 1vh;
+    }
+
+    #imagem1{
+        height: 180px;
+        text-shadow: 0px 0px 3px #000;
+    }
+
+    #imagem1 h1{
+        font-size: 2em;
+        margin-top: 35px;
+    }
+    
+    #imagem1 p{
+        font-size: 1.8em;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .colunas{
+        font-size: 1.8em;
+    }
+
+    .paragrafos{
+        font-size: 1.5em;
+    }
+
+    .imgtxt p{
+        margin: 5px;
+        font-size: 1.7em;
+    }
+
+    #conteudo_formulario form input{
+        font-size: 1.9em;
+        height: 45px;
+        margin-top: 5px;
+        padding-left: 5px;
+        border-radius: 1vh;
+    }
+    
+    #btn_es{
+        width: 368px;
+        color: rgb(99, 99, 99);
+        font-weight: bold;
+    }
+
+    #txtpr{
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (min-width:780px){
+    #cabecalho h1{
+        font-size: 2.5em;
+        padding: 10px;
+        margin-top: 22px;
+    }
+
+    #cabecalho button{
+        display: none;
+    }
+
+    #menu{
+        width: 60%;
+        height: 100px;
+        float: right;
+        position: relative;
+        
+    }
+
+    #menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu ul li a{
+        color: grey;
+        font-size: 1.8em;
+    }
+    #menu ul li {
+        margin: 10px 20px 0 0;
+    }
+}

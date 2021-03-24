@@ -1,0 +1,186 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#principal{
+    background-color: cadetblue;
+    width: 100%;
+    height: 300%;
+    position: absolute;
+}
+
+.tela{
+    width: 100%;
+    height: 33.3333%;
+}
+
+#tela1{
+    background-color: chocolate;
+}
+#topo{
+    background-color: #fca503;
+    width: 100%;
+    height: 15%;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#menu_superior{
+    background-color: whitesmoke;
+    width: 55%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 20vh;
+    box-shadow: 0px 0px 20px whitesmoke;
+}
+#menu_superior ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+#menu_superior ul a{
+    font-family: sans-serif;
+    font-size: 5vh;
+    font-weight: bold;
+    color: #fca503;
+    text-shadow: 2px 2px 3px #000;
+    text-decoration: none;
+}
+
+#conteudo_tela1{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#conteudo_tela1 figure{
+    background-image: url("../img/img1.png");
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 45%;
+}
+
+#conteudo_tela1 div{
+    width: 70%;
+    height: 40%;
+}
+
+#conteudo_tela1 div h2{
+    font-family: sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #fca503;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+#conteudo_tela1 div p{
+    font-family: sans-serif;
+    font-size: 2.6vh;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#tela2,#tela3{
+    display: flex;
+}
+
+
+#tela2{
+    background-color: #fca503;
+}
+
+.divisoria{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#esquerdo_tela2 figure,#direito_tela2 figure{
+    background-color: black;
+    width: 70%;
+    height: 50%;
+}
+
+#esquerdo_tela2 figure{
+    background-image: url(../img/img2.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 5px #000;
+}
+
+#direito_tela2 figure{
+    background-image: url(../img/img3.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 5px #000;
+}
+
+#esquerdo_tela2 div,#direito_tela2 div{
+    background-color: cornsilk;
+    width: 60%;
+    height: 15%;
+    box-shadow: 2px 2px 5px #000;
+    font-family: sans-serif;
+    font-size: 7vh;
+    font-weight: bold;
+    color: #fca503;
+    text-shadow: 2px 2px 3px #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#tela3{
+    background-color: whitesmoke;
+}
+
+#esquerdo_tela3 figure{
+    background-color:  #fca503;
+    width: 90%;
+    height: 90%;
+    box-shadow: 2px 2px 5px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#direito_tela3 div{
+    background-color:  #fca503;
+    width: 90%;
+    height: 15%;
+    box-shadow: 2px 2px 5px #000;
+    font-family: sans-serif;
+    font-size: 2.4vh;
+    font-weight: bold;
+    color: rgb(97, 75, 29);
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

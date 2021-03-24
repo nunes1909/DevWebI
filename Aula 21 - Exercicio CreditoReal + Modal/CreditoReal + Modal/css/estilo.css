@@ -1,0 +1,280 @@
+@charset 'utf-8';
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Tahoma;
+}
+
+#principal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#topo {
+    background-image: url(../img/topo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 30%;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    z-index: 30;
+}
+
+#logo {
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 35%;
+    height: 35%;
+    position: absolute;
+    left: 7%;
+    top: 2%;
+}
+
+#menu_superior {
+    width: 50%;
+    height: 20%;
+    background-color: #eb664a;
+    display: flex;
+    border-radius: 10vh 0 0 10vh;
+    box-shadow: 1px 1px 10px #000;
+    position: relative;
+}
+
+#menu_superior ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu_superior ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+    transition: 0.3s;
+}
+
+#menu_superior ul a:hover {
+    text-shadow: 1px 1px 5px #fff;
+}
+
+#corpo,
+#corpo_modal_contato {
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+#contato {
+    width: 30%;
+    height: 100%;
+    background-color: #eb664a;
+    border-top-right-radius: 100%;
+    box-shadow: 1px 1px 10px #000;
+    display: flex;
+    align-items: center;
+}
+
+video,
+audio {
+    margin: auto;
+}
+
+#contato figure {
+    margin: auto;
+    margin-right: 20%;
+    margin-top: 20%;
+}
+
+#legenda_contato {
+    font-size: 3vh;
+    text-align: center;
+    padding-bottom: 4%;
+}
+
+#contato form p {
+    padding: 5%;
+}
+
+.input_contato {
+    width: 60%;
+    font-size: 2.7vh;
+    border-radius: 10px;
+    border: none;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea {
+    width: 90%;
+    font-size: 3vh;
+    border-radius: 10px;
+    margin-left: 2%;
+}
+
+#conteudo_texto {
+    width: 45%;
+    height: 100%;
+    color: chocolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#conteudo_texto h1 {
+    text-shadow: 1px 1px 3px #000;
+    font-size: 3vh;
+}
+
+#conteudo_texto p {
+    text-align: justify;
+    text-indent: 7%;
+    margin: 0 5%;
+    font-size: 2vh;
+}
+
+#fachada {
+    width: 25%;
+    height: 100%;
+}
+
+#fachada figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#fachada figure img {
+    width: 95%;
+    padding: 5% 0;
+}
+
+#fachada figure figcaption {
+    font-style: italic;
+    color: chocolate;
+}
+
+footer#rodape {
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to right, #eb664a 65%, #fff 95%);
+    position: relative;
+}
+
+video {
+    width: 40%;
+}
+
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table,
+tr,
+td {
+    border: solid 1px chocolate;
+}
+
+th {
+    height: 50px;
+    font-size: 4vh;
+}
+
+#tb_lado {
+    width: 20%;
+    transform: rotate(-90deg);
+}
+
+.cont {
+    margin: auto;
+}
+
+#corpo_modal_contato {
+    background: linear-gradient(to right, #995548 65%, #fff 95%);
+}
+
+#modal_pai {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+}
+
+#modal {
+    width: 40%;
+    height: 70%;
+    border: solid 1px #000;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px #000;
+    display: flex;
+    justify-content: center;
+    margin-top: -1200px;
+    transition: 1s;
+    z-index: 50;
+}
+
+#modal form {
+    width: 50%;
+    height: 60%;
+    margin-top: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 2.3vh;
+}
+
+.botao {
+    width: 45%;
+    font-size: 2.7vh;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #eb664a;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botao:hover {
+    color: #eb664a;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#btn_af {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#btn_af button {
+    width: 150px;
+    margin: 2% 0 0 35%;
+    border-radius: 5px;
+}
+
+#btn_af button a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+}

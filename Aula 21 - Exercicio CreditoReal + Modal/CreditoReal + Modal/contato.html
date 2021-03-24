@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crédito Real noite</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+
+<body>
+    <main id="principal">
+        <header id="topo">
+            <figure id="logo"></figure>
+            <nav id="menu_superior">
+                <ul>
+                    <a href="index.html">
+                        <li>HOME</li>
+                    </a>
+                    <a href="historia.html">
+                        <li>HISTÓRIA</li>
+                    </a>
+                    <a href="produtos.html">
+                        <li>PRODUTOS</li>
+                    </a>
+                    <a href="contato.html">
+                        <li>CONTATO</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <div id="corpo_modal_contato">
+            <section id="contato">
+                <figure>
+                    <img src="img/logo2.png">
+                </figure>
+
+            </section>
+
+            <div id="modal_pai">
+                <div id="modal">
+                    <form action="#" method="post">
+                        <legend id="legenda_contato">CONTATO</legend>
+                        <p>
+                            <label>NOME:</label>
+                            <input type="text" id="nome" class="contato" required>
+                        </p>
+
+                        <p>
+                            <label>TELEFONE:</label>
+                            <input type="tel" id="telefone" class="contato" required>
+                        </p>
+
+                        <p>
+                            <label>E-MAIL:</label>
+                            <input type="email" id="email" class="contato" required>
+                        </p>
+
+                        <fieldset>
+                            <p>
+                                <legend id="msg">MENSAGEM:</legend>
+                            </p>
+                            <textarea></textarea>
+                            <p>
+                                <input type="submit" class="botao" value="Enviar" onclick="validar()">
+                                <input type="reset" class="botao" value="Limpar">
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <footer id="rodape">
+            <div id="btn_af">
+                <button type="button"><a href="#" onclick="abrirModal()" id="abrir">Abrir Contato</a></button>
+                <button type="button"><a href="#" onclick="fecharModal()" id="abrir">Fechar Contato</a></button>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/funcoes.js"></script>
+    </main>
+</body>
+
+</html>

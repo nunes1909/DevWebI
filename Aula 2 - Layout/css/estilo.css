@@ -1,0 +1,97 @@
+@charset 'utf-8';
+            
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+
+#geral{
+    background-color: cornflowerblue; 
+    width: 100%; 
+    height: 100%; 
+    position: absolute;
+}
+#topo{
+    background-color: darkorange;
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+#navss{
+    background-color: darkcyan;
+    width: 60%;
+    height: 25%;
+    margin-top: auto;
+    margin-left: auto;
+}
+ul{
+    list-style-type: none;
+    text-align: center;
+    word-spacing: 120px;
+    line-height: 40px;    
+}
+li{
+    display: inline;
+}
+a{
+    color: rgb(206, 99, 61);
+    font-family: 'Fredericka the Great', arial;
+    font-size: 2.8vh;
+    font-weight: 650;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000;
+    transition: 0.3s;
+}
+#principal{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 65%;
+    display: flex;
+}
+#menu_esquerdo, #menu_direito{
+    background-color: darkcyan;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#ebloco1, #ebloco2, #ebloco3, #ebloco4, #ebloco5, #ebloco6{
+    background-color: beige;
+    width: 70%;
+    height: 10%;
+}
+#dbloco1, #dbloco2, #dbloco3{
+    background-color: beige;
+    width: 60%;
+    height: 30%;
+}
+#conteudo{
+    background-color: darkseagreen;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: space-around;
+}
+#coluna1, #coluna2, #coluna3, #coluna4, #coluna5{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#cbloco1, #cbloco2, #cbloco3, #cbloco4, #cbloco5, #cbloco6, #cbloco7, #cbloco8, #cbloco9, #cbloco10, #cbloco11, #cbloco12, #cbloco13, #cbloco14, #cbloco15, #cbloco16, #cbloco17, #cbloco18, #cbloco19, #cbloco20, #cbloco21, #cbloco22, #cbloco23, #cbloco24, #cbloco25{
+    background-color: beige;
+    width: 100%;
+    height: 19%;
+} 
+#rodape{
+    background-color: darkorange;
+    width: 100%;
+    height: 10%;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Crédito Real</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+   <main id="principal">
+      <header id="topo">
+          <figure id="logo"></figure>
+          <nav id="menu_superior">
+              <ul>
+                  <a href="home.html" target="n_conteudo"><li>HOME</li></a>
+                  <a href="historia.html" target="n_conteudo"><li>HISTÓRIA</li></a>
+                  <a href="produtos.html" target="n_conteudo"><li>PRODUTOS</li></a>
+                  <a href="contato.html" target="n_conteudo"><li>CONTATO</li></a>
+              </ul>
+          </nav>
+      </header>
+      <div id="corpo">
+          <section id="contato">
+              <form action="#" method="post">
+                  <legend id="legenda_contato">CONTATO</legend>
+                  <p>
+                      <label>NOME:</label>
+                      <input type="text" class="contato" required>
+                  </p>
+                  
+                  <p>
+                      <label>E-MAIL:</label>
+                      <input type="email" class="contato" required>
+                  </p>
+                  
+                  <p>
+                      <label>TELEFONE:</label>
+                      <input type="tel" class="contato" required>
+                  </p>
+                  
+                  <fieldset>
+                      <p><legend>MENSAGEM:</legend></p>
+                      <textarea></textarea>
+                      <p>
+                          <input type="submit" class="btn" value="Enviar">
+                          <input type="reset" class="btn" value="Limpar">
+                      </p>
+                  </fieldset>
+              </form>
+          </section>
+          <iframe src="home.html" name="n_conteudo"></iframe>
+      </div>
+      <footer id="rodape"></footer>
+   </main>
+</body>
+</html>

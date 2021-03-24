@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modal JS</title>
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    </head>
+    <body>
+        <a href="#" onclick="abrirModal()" id="abrir">Abrir</a>
+        <div id="modal_pai">
+            <div id="modal">
+                <a href="#" onclick="fecharModal()" id="fechar">X</a>
+                <form action="" method="get">
+                    <label>Valor 1:
+                        <input type="text" id="valor1" name="n_valor1">
+                    </label>
+                    <label>Valor 2:
+                        <input type="text" id="valor2" name="n_valor2">
+                    </label>
+                    <label>Operação:
+                        <select id="operacao">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                            <option value="%">%</option>
+                            <option value="**">**</option>
+                            <option value="raiz">Raiz</option>
+                        </select>
+                    </label>
+                    
+                    <input type="button" value="Calcular" onclick="calcular(),validar()">
+                </form>
+                <h1 id="resultado"></h1>
+            </div>
+
+        </div>
+        <script type="text/javascript" src="js/funcoes.js"></script> 
+    </body>
+</html>

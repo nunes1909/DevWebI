@@ -1,0 +1,124 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+#corpo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 15%;
+    background-color: #3b5998;
+    display: flex;
+}
+
+#cabecalho div{
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5vh;
+}
+
+#login{
+    display: flex;
+    align-items: center;
+}
+
+#forme input, #forms input {
+    width: 150px;
+    height: 20px;
+}
+
+#forms {
+    margin-right: 40%;
+}
+
+#botao{
+    font-size: 2.5vh;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    background-color: #4267b2;
+    border-color: #29487d;
+    margin: 40% 0 0 -550%;
+}
+
+#meio{
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(white, #bdc1cf);
+    display: flex;
+}
+
+#meio div{
+    width: 50%;
+    height: 100%;
+}
+
+#texto{
+    display: flex;
+    justify-content: s;
+    flex-direction: column;
+    background-image: url(../img/img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+#texto h2{
+    font-size: 3vh;
+    color: #0e385f;
+    font-weight: bold;
+    margin: 5% 20% 0 20%;
+    position: relative;
+}
+
+#formd h2, p, label, spam{
+    padding: 1%;
+}
+
+#formd h2{
+    margin-top: 3%;
+    font-size: 6vh;
+    font-weight: bold;
+}
+
+#formd input{
+    font-size: 3.3vh;
+}
+
+.campo{
+    border-radius: 1vh;
+    border-color: #90949c;
+    border-width: 2px;
+}
+
+#cadastrar{
+    color: white;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+    width: 25%;
+}
+
+#rodape{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+}

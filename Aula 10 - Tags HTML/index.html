@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <title>Tags HTML 5</title>
+</head>
+
+<body>
+  <h1>Atividade 8</h1>
+  <h2>Entendo os comandos das tags HTML 5</h2>
+  <p>
+    O HTML5 assim como qualquer outra linguagem ao ser atualizada, além de receber novo comandos, aposenta outros.
+    Dessa forma, você pode acompanhar no artigo abaixo, as tags que <br> permanecem em uso no HTML5 e as tags que foram
+    descontinuadas e só servem para as versões anteriores.
+  </p>
+  <h3>Tags semanticas</h3>
+  <ul>
+    <li>Header</li>
+    <li>section</li>
+    <li>article</li>
+    <li>nav</li>
+    <li>aside</li>
+    <li>main</li>
+    <li>figure</li>
+    <li>footer</li>
+    <li>a</li>
+    <li>em</li>
+    <li>strong</li>
+    <li>cite</li>
+    <li>q</li>
+    <li>time</li>
+  </ul>
+  <hr />
+  <h3>Containers</h3>
+  <div id="container"></div>
+  <hr>
+  <h3>Formulário</h3>
+  <form>
+    <fieldset>
+      <legend>Cadastro de usuário</legend>
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+          <label>Nome:</label>
+          <input type="text">
+        </p>
+        <p>
+          <label>Idade</label>
+          <input type="number">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <p>
+          <input type="radio" name="sexo" value="Masculino">Masculino
+          <br><input type="radio" name="sexo" value="Feminino">Feminino
+        </p>
+      </fieldset>
+      <P>
+        <label>Data de nascimento:</label>
+        <input type="date">
+      </P>
+      <fieldset>
+        <legend>Dados profissonais</legend>
+        <label>Conhecimentos profissonais</label><br>
+        <input type="checkbox">TI<br>
+        <input type="checkbox">Gestão de projetos<br>
+        <input type="checkbox">Ifraestrutura<br>
+        <label>Informe aqui as 3 ultimas em presas onde trabalhou</label><br>
+        <textarea rows="3" cols="80"></textarea>
+        <p>
+          <label>Enviar currículo</label><br>
+          <input type="file">
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Login:</legend>
+        <label>Usuário:</label>
+        <input type="text">
+        <label> Senha:</label>
+        <input type="password">
+        <input type="button" value="Entrar">
+      </fieldset><br>
+      <input type="submit" value="Cadastrar">
+      <input type="reset" value="Limpar">
+    </fieldset>
+  </form>
+  <hr>
+  <h3>Vídeo</h3>
+  <P>
+    <video controls width="320" height="240">
+      <source src="video/video.mp4">
+    </video>
+  </P>
+  <hr>
+  <audio controls>
+    <source src="audio/audio.mp3">
+  </audio>
+  <hr>
+  <h3>Mapa</h3>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.6164622664874!2d-51.18033684912263!3d-29.904150081844833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197aa082c34d17%3A0x9f37f87b90b37665!2sQI%20Faculdade%20%26%20Escola%20T%C3%A9cnica%20%7C%20Canoas!5e0!3m2!1spt-BR!2sbr!4v1596584110422!5m2!1spt-BR!2sbr"
+    width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+    tabindex="0"></iframe>
+  <hr>
+  <h2>A regra CSS e sua sintaxe</h2>
+  <p>
+    Uma regra CSS é uma declaração que segue uma sintaxe própria e que define como será aplicado estilo a um ou mais
+    elementos HTML.
+    Um conjunto de regras CSS formam uma Folha de Estilos.
+    Uma regra CSS, na sua forma mais elementar, compõe-se de três partes:
+    um seletor;
+    uma propriedade;
+    e um valor.
+    e tem a sintaxe conforme mostrado abaixo:
+    seletor { propriedade: valor; }
+    Seletor: <strong>é o elemento HTML</strong> (ou uma classe a aplicar a um elemento HTML) para o qual a regra será;
+    válida.
+    Propriedade: é o atributo do elemento HTML ao qual será aplicada a regra (por exemplo: font, color, background,
+    etc...).
+    Valor: é a característica específica a ser assumida pela propriedade (por exemplo: letra tipo arial, cor azul, fundo
+    verde, etc...)
+    Na sintaxe de uma <em>regra</em> CSS escreve-se o seletor e a seguir a propriedade e valor separados por dois pontos
+    e entre chaves { }.
+    Quando mais de uma propriedade for definida na regra, deve-se usar ponto-e-vírgula para separá-las.
+    O ponto-e-vírgula é facultativo no caso de propriedade única e também após a declaração da última propriedade no
+    caso de mais de uma.
+  </p>
+</body>
+
+</html>

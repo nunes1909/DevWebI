@@ -1,0 +1,363 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family:Monster Mech;
+    src:url("../font/Monster Mech.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Baloo Tamma 2', cursive;
+    border: none;
+    box-sizing: border-box;
+    /*font-family: Monster Mech;*/
+}
+
+body{
+    background-color: darkorange;
+}
+ul{
+    list-style: none;
+}
+
+#topo{
+    width: 100%;
+    background-color: white;
+    float: left;
+}
+#topo a{
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logo2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    float: left;
+    
+}
+#btn_menu{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: darkorange;
+    border-radius: 10px;
+}
+#menu{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(255,140,0,0.9);
+}
+
+#menu:target{
+    height: 100%
+}
+
+#btn_fechar{
+    float: right;
+    margin-top: 24px;
+    margin-right: 25px;
+    border-radius: 0px;
+}
+
+#menu ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    float: left;
+}
+#menu ul li{
+    padding: 3%;
+    transition: 0.2s;
+    font-size: 1.1em;
+}
+#menu ul li:hover{
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 
+}
+#banner{
+    float: left;
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-size: 0.9em;
+    color: white;
+    margin-top: 5px;
+    text-shadow: 0.5px 0px 1px #000;
+}
+
+#banner h2,h3{
+    padding: 2%;
+}
+#banner button{
+    width: 45%;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 0.8em;
+    color: darkorange;
+    text-align: left;
+    padding-left: 3%;
+    margin-bottom: 5px;
+}
+
+#banner button i{
+    float: right;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
+#corpo{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+}
+
+.conteudo{
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    font-size: 0.7em;
+    margin-bottom: 3%;
+    border-radius: 7px;
+}
+
+#corpo img{
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+#corpo section p{
+    padding: 5%;
+}
+
+#corpo section h4{
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+#inscrevase{
+    width: 100%;
+    float: left;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    text-shadow: 0.5px 0px 1px #000;
+}
+
+#inscrevase input,button{
+    width: 98%;
+    height: 40px;
+    border-radius: 7px;
+    margin: 1%;
+    color: darkorange;
+}
+
+#inscrevase input::placeholder{
+    color: chocolate;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+
+#inscrevase button{
+    background-color: darkorange;
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 3px #fff;
+    margin-top: 5px;
+}
+
+#rodape{
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    font-size: 0.8em;
+    text-shadow: 0.5px 0px 1px #000;
+    margin-top: 10px;
+}
+
+#redes_sociais a{
+    color: rgba(255,255,255,0.7);
+    font-size: 1.4em;
+    text-shadow: none;
+    margin-right: 3%;
+}
+
+#redes_sociais a:hover{
+    color: rgba(255,255,255,1);
+}
+
+#rodape p{
+    margin-top: 10px;
+}
+
+
+@media screen and (min-width:480px){
+    #banner{
+        font-size: 1.2em;
+    } 
+    #banner button{
+        font-size: 1em; 
+    }
+    
+    .conteudo{
+        font-size: 1em;
+    }
+    #inscrevase,#rodape{
+        font-size:  1.2em;
+    }
+    
+    #inscrevase input::placeholder{
+        font-size: 1.2em;
+    }
+    
+    #inscrevase button{
+        font-size: 1.2em;
+    } 
+    #redes_sociais a i{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (min-width:780px){
+    #logo{
+        width: 200px;
+        height: 100px;
+        background-image: url(../img/logo4.png);
+        background-size: 100%;
+        margin-left: 100px;
+    }
+    #btn_menu{
+        margin-top: 25px;
+    }
+    
+    #btn_fechar{
+        margin-top: 44px;
+    }
+    
+   .conteudo{
+        font-size: 1.2em;
+    }
+    
+    #banner button{
+        height: 40px;
+    }
+    
+    
+
+}
+
+@media screen and (min-width:1024px){
+    #corpo{
+        display: flex;
+    }
+    
+    .conteudo{
+        font-size: 1em;
+        text-align: justify;
+        margin-left: 5px;
+        
+    }
+    .conteudo span{
+        padding: 2%;
+    }
+    #banner{
+        font-size: 1.5em;
+        display: flex;
+        margin-top: 100px;
+    }
+    
+    #banner button{
+        width: 90%;
+        height: 55px;
+        margin-top: 10px;
+    }
+    
+    
+    #botoes{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    } 
+    
+    #inscrevase{
+        font-size: 1.4em;
+    }
+    
+    #inscrevase form{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #inscrevase form button{
+        margin-top: 10px;
+        width: 30%;
+    }
+    
+    #redes_sociais a i{
+        font-size: 1.5em;
+    }
+
+    #btn_menu,#btn_fechar{
+        display: none;
+    }
+    
+    #menu{
+        width: 50%;
+        height: 100px;
+        float: right;
+        position: relative;
+        transition: none;
+        background: none;
+        
+    }
+    #topo{
+        position: fixed;
+    }
+    
+    #menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu ul li a{
+        color: darkorange;
+        font-size: 1em;
+    }
+    #menu ul li {
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+

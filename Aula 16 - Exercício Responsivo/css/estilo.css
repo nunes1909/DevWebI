@@ -1,0 +1,164 @@
+@charset 'utf-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#corpo1{
+    width: 100%;
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: flex-end;
+}
+
+#cabecalho figure{
+    width: 200px;
+    padding-top: 15px;
+}
+
+#cabecalho figure img{
+    width: 100%;
+}
+
+#textos1{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(143, 143, 143, 0.5);
+    text-align: center;
+}
+
+#textos1 h1{
+    width: 100%;
+    padding: 140px 10px 0 10px;
+    color: chocolate;
+    font-size: 2.5em;
+    text-shadow: 0px 0px 4px #000;
+}
+
+#textos1 h2{
+    width: 100%;
+    color: rgb(139, 97, 67);
+    font-size: 2em;
+    text-shadow: 0px 0px 4px #000;
+}
+
+#pai_carrocel{
+    padding: 0% 2%;
+}
+
+.txt1{
+    background-color: rgb(214, 180, 140);
+    padding: 1% 1%;
+}
+
+.txt1 h2{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.txt1 h3{
+    text-align: justify;
+    font-size: 1em;
+    padding: 15px;
+}
+
+.carrocel{
+    width: 100%;
+}
+
+#rodape{
+    width: 100%;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #d1d1d1;
+}
+
+@media screen and (min-width:480px){
+    #textos1 h1{
+        padding: 140px 10px 0 10px;
+        font-size: 2.7em;
+        text-shadow: 0px 0px 4px #000;
+    }
+    
+    #textos1 h2{
+        font-size: 2.2em;
+        text-shadow: 0px 0px 4px #000;
+    }
+    
+    .txt1 h2{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 1.8em;
+    }
+    
+    .txt1 h3{
+        text-align: justify;
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    #rodape{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width:768px){
+    #textos1 h2{
+        font-size: 2.4em;
+        text-shadow: 0px 0px 4px #000;
+    }
+    
+    .txt1 h2{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 1.9em;
+    }
+    
+    .txt1 h3{
+        text-align: justify;
+        font-size: 1.4em;
+        padding: 15px;
+    }
+
+    #rodape{
+        font-size: 1.4em;
+    }
+    #rodape{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width:1024px){
+    #pai_carrocel{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+    }
+
+    .txt_carrocel1{
+        width: 490px;
+        border: solid 1px #000;
+        box-shadow: -1px -1px #000;
+    }
+
+    #rodape{
+        font-size: 1.5em;
+        margin-top: 5px;
+    }
+}
